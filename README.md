@@ -1,9 +1,4 @@
 # KITTI Dataset for trajectory prediction
 
-@InProceedings{Marchetti_2020_CVPR,
-author = {Marchetti, Francesco and Becattini, Federico and Seidenari, Lorenzo and Bimbo, Alberto Del},
-title = {MANTRA: Memory Augmented Networks for Multiple Trajectory Prediction},
-booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
-}
+This repository contains Kitti dataset for trajectory prediction used in "MANTRA: Memory Augmented Networks for Multiple Trajectory Prediction" published on [CVPR2020](http://openaccess.thecvf.com/content_CVPR_2020/html/Marchetti_MANTRA_Memory_Augmented_Networks_for_Multiple_Trajectory_Prediction_CVPR_2020_paper.html) ([arxiv](https://arxiv.org/abs/2006.03340))
+
