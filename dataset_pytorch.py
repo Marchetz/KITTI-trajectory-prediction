@@ -161,7 +161,6 @@ class TrackDataset(data.Dataset):
 
     def __getitem__(self, idx):
         return self.index[idx], self.pasts[idx], self.futures[idx], np.eye(4, dtype=np.float32)[self.scenes[idx]], \
-               self.positions_in_map[idx], self.rotation_angles[idx], self.videos[idx], \
-               self.classes[idx], self.num_vehicles[idx], self.step_sequences[idx], self.scenes[idx],
+               self.videos[idx], self.classes[idx], self.num_vehicles[idx], self.step_sequences[idx], self.scenes[idx],
 
 
