@@ -32,11 +32,13 @@ To create a dataset and relative dataloader to train your own models:
         data_test    = dataset_pytorch.TrackDataset('dataset_kitti_test.json')
         test_loader  = DataLoader(data_test, batch_size=32, num_workers=1, shuffle=False)
         
-        for step, (index, past, future, scene_one_hot, position_in_map, rotation_angle, video, class, num_vehicles, step, scene) in enumerate(tqdm(train_loader)):
+        for step, (index, past, future, scene_one_hot, video, class, num_vehicles, step, scene) in enumerate(tqdm(train_loader)):
             #code to call own model
               
 
 ```
+
+*scene_one_hot* ([dim_batch,180,180,4] dimension) is used for training while *scene* ([dim_batch,180,180,1] dimension) is used for qualitative visualization.  
 
 ## AUTHORS AND CONTACTS
 
