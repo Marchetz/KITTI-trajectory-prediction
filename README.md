@@ -23,17 +23,17 @@ The _maps_ folder contains whole top-view context of a specific video. For each 
 To create a dataset and relative dataloader to train your own models:
 
 ```
-        from torch.utils.data import DataLoader
-        import dataset_pytorch
-        from tqdm import tqdm
-        
-        data_train   = dataset_pytorch.TrackDataset('dataset_kitti_test.json')
-        train_loader = DataLoader(data_train, batch_size=32, num_workers=1, shuffle=True)
-        data_test    = dataset_pytorch.TrackDataset('dataset_kitti_test.json')
-        test_loader  = DataLoader(data_test, batch_size=32, num_workers=1, shuffle=False)
-        
-        for step, (index, past, future, scene_one_hot, video, class, num_vehicles, step, scene) in enumerate(tqdm(train_loader)):
-            #code to call own model
+from torch.utils.data import DataLoader
+import dataset_pytorch
+from tqdm import tqdm
+
+data_train   = dataset_pytorch.TrackDataset('dataset_kitti_test.json')
+train_loader = DataLoader(data_train, batch_size=32, num_workers=1, shuffle=True)
+data_test    = dataset_pytorch.TrackDataset('dataset_kitti_test.json')
+test_loader  = DataLoader(data_test, batch_size=32, num_workers=1, shuffle=False)
+
+for step, (index, past, future, scene_one_hot, video, class, num_vehicles, step, scene) in enumerate(tqdm(train_loader)):
+    #code to call own model
               
 
 ```
